@@ -1,0 +1,25 @@
+{
+  "name": "brekitomasson/haiku",
+  "description": "Package which generates a grammatically correct haiku.",
+  "type": "project",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "BrekiTomasson\\Haiku\\": "app",
+      "Text\\BrekiTomasson\\Haiku\\": "test"
+    }
+  },
+  "authors": [
+    {
+      "name": "Breki Tomasson",
+      "email": "breki.tomasson@gmail.com"
+    }
+  ],
+  "minimum-stability": "beta",
+  "require": {
+    "vanderlee/syllable": "^1.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.4"
+  }
+}

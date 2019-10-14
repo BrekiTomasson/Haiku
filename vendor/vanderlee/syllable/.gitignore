@@ -1,0 +1,9 @@
+/.idea
+/nbproject/private/
+/build/
+/cache/
+/nbproject/
+/debug/
+/build/
+/composer.lock
+/vendor/
