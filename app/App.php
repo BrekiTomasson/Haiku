@@ -2,9 +2,12 @@
 
 namespace BrekiTomasson\Haiku;
 
+use BrekiTomasson\Haiku\Language\Builder;
+
 class App {
 
-    public static $core;
+    /** @var Builder */
+    public $builder;
 
     public function __construct()
     {
@@ -12,20 +15,14 @@ class App {
 
         $this->register();
 
-        $this->run();
     }
 
-    protected function boot()
+    protected function boot() : void
     {
-        self::$core = new Core();
+        $this->builder = new Builder();
     }
 
-    protected function register ()
-    {
-        //
-    }
-
-    protected function run()
+    protected function register () : void
     {
         //
     }
